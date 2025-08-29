@@ -1,0 +1,5 @@
+{
+  "name": "My Lessons",
+  "description": "An application for students to manage and view their lesson notes. Users can upload their own lessons and pictures, or generate notes and multiple-choice questions using AI. All data is persisted in local storage.",
+  "requestFramePermissions": []
+}
