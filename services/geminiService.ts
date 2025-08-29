@@ -1,7 +1,7 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { type MCQ, type Lesson } from '../types';
 
-const apiKey = "AIzaSyAtYkoEu5t2qcZvcn6aO3TRPY-1euj_xok";
+const apiKey = "AIzaSyDrJD9PRQVxh4iPU8ZsGyhQuuEoNggecmY";
 
 if (!apiKey) {
   throw new Error(
