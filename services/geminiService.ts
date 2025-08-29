@@ -1,11 +1,15 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { type MCQ, type Lesson } from '../types';
 
-if (!process.env.API_KEY) {
-  throw new Error("API_KEY environment variable not set");
+const apiKey = "AIzaSyAtYkoEu5t2qcZvcn6aO3TRPY-1euj_xok";
+
+if (!apiKey) {
+  throw new Error(
+    "Gemini API key not configured. An API key is required to use the AI features."
+  );
 }
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey });
 
 export const generateLessonNotes = async (topic: string): Promise<string> => {
     console.log(`Generating lesson notes for topic: ${topic}`);
